@@ -1,0 +1,106 @@
+.container {
+    position: relative;
+    display: flex;
+    width: 850px;
+    max-width: 100%;
+    flex-direction: column;
+}
+
+.title {
+    color: #000;
+    letter-spacing: -0.6px;
+    font: 800 30px Open Sans, sans-serif;
+    border: 1px solid red;
+}
+
+@media (max-width: 991px) {
+    .title {
+        max-width: 100%;
+    }
+}
+
+.contentWrapper {
+    margin-top: 39px;
+    width: 611px;
+    max-width: 100%;
+}
+
+.flexContainer {
+    gap: 20px;
+    display: flex;
+}
+
+@media (max-width: 991px) {
+    .flexContainer {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0px;
+    }
+}
+
+.imageColumn {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 42%;
+    margin-left: 0px;
+}
+
+@media (max-width: 991px) {
+    .imageColumn {
+        width: 100%;
+    }
+}
+
+.courseImage {
+    aspect-ratio: 0.98;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    flex-grow: 1;
+}
+
+@media (max-width: 991px) {
+    .courseImage {
+        margin-top: 21px;
+    }
+}
+
+.textColumn {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 58%;
+    margin-left: 20px;
+}
+
+@media (max-width: 991px) {
+    .textColumn {
+        width: 100%;
+    }
+}
+
+.courseDetails {
+    color: #000;
+    align-self: stretch;
+    margin: auto 0;
+    font: 800 23px/33px Open Sans, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+@media (max-width: 991px) {
+    .courseDetails {
+        margin-top: 40px;
+    }
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
